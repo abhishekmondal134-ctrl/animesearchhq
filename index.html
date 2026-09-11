@@ -2125,7 +2125,7 @@
       
     });
   </script>
-  <!-- Firebase SDK & Live Realtime Sync -->
+ <!-- Firebase SDK & Automatic Realtime Sync -->
 <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
 <script>
@@ -2135,21 +2135,23 @@
   firebase.initializeApp(firebaseConfig);
   const db = firebase.database();
 
-  // Sync cloud database with the website in real time
+  // Pull data from Firebase whenever it updates
   db.ref("animeList").on("value", (snapshot) => {
     const data = snapshot.val();
     if (data) {
-      localStorage.setItem("animeSearchHQ_db", JSON.stringify(data));
+      localStorage.setItem("animesearchhq_catalog_data", JSON.stringify(data));
       if (typeof renderAnimeGrid === "function") renderAnimeGrid();
-      const syncBadge = document.getElementById("sync-status");
-      if (syncBadge) syncBadge.innerText = "☁️ Cloud Live Sync Active";
+      if (typeof loadCatalog === "function") loadCatalog();
     }
   });
 
-  // Automatically push updates to Firebase when host saves
-  window.saveToCloud = function(animeData) {
-    db.ref("animeList").set(animeData);
-  };
+  // Auto-detect changes you make in Host Mode and push them to Firebase
+  let lastCatalogState = localStorage.getItem("animesearchhq_catalog_data");
+  setInterval(() => {
+    const currentCatalogState = localStorage.getItem("animesearchhq_catalog_data");
+    if (currentCatalogState && currentCatalogState !== lastCatalogState) {
+      lastCatalogState = currentCatalogState;
+      db.ref("animeList").set(JSON.parse(currentCatalogState));
+    }
+  }, 2000);
 </script>
-</body>
-</html>
