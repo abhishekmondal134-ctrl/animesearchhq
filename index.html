@@ -1,0 +1,2128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary SEO Meta Tags for AnimeSearchHQ #1 Ranking -->
+  <title>AnimeSearchHQ - Direct Hindi Anime & Cartoon Link Index</title>
+  <meta name="title" content="AnimeSearchHQ - Direct Hindi Anime & Cartoon Link Index" />
+  <meta name="description" content="AnimeSearchHQ is the #1 direct index for Hindi dubbed anime, Dragon Ball Z, Ben 10, Naruto, and classic cartoon episode links. Zero video hosting, pure direct redirection guide." />
+  <meta name="keywords" content="AnimeSearchHQ, AnimeSearch HQ, anime search hq, animesearch, hindi dubbed anime directory, raretoons links, ben 10 hindi drive links, dbz mega links, cartoon network hindi" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="AnimeSearchHQ" />
+
+  <!-- Open Graph / Social Sharing Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AnimeSearchHQ - Direct Hindi Anime & Cartoon Link Index" />
+  <meta property="og:description" content="Search any anime or cartoon title, view IMDb ratings and storylines, and access direct external cloud redirection links on AnimeSearchHQ." />
+  <meta property="og:site_name" content="AnimeSearchHQ" />
+  <meta name="theme-color" content="#070a10" />
+
+  <!-- Embedded Styling: Modern Dark Cyberpunk RareToons / IMDb Hybrid UI -->
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-main: #070a10;
+      --bg-surface: #0e131d;
+      --bg-card: #131a27;
+      --bg-hover: #1b2436;
+      --border-subtle: #202b3d;
+      --border-focus: #00d2ff;
+      --accent-cyan: #00f2fe;
+      --accent-cyan-dark: #0284c7;
+      --accent-gold: #f5c518;
+      --accent-gold-hover: #ffd644;
+      --accent-danger: #ef4444;
+      --accent-danger-hover: #dc2626;
+      --accent-success: #10b981;
+      --accent-purple: #a855f7;
+      --text-white: #ffffff;
+      --text-sub: #94a3b8;
+      --text-muted: #64748b;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --radius-full: 9999px;
+      --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.5);
+      --shadow-cyan-glow: 0 0 25px rgba(0, 242, 254, 0.25);
+      --shadow-gold-glow: 0 0 20px rgba(245, 197, 24, 0.25);
+    }
+
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-white);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.5;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, input, select, textarea {
+      font-family: inherit;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg-main);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--border-subtle);
+      border-radius: var(--radius-full);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--accent-cyan);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* Header & Navigation */
+    .site-header {
+      background-color: rgba(14, 19, 29, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+      gap: 1rem;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      user-select: none;
+      transition: opacity 0.2s ease;
+    }
+    .brand-logo:hover {
+      opacity: 0.9;
+    }
+
+    .brand-badge-box {
+      background: linear-gradient(135deg, #00f2fe, #4facfe);
+      color: #05080e;
+      font-weight: 900;
+      font-size: 1.15rem;
+      padding: 5px 9px;
+      border-radius: var(--radius-sm);
+      letter-spacing: -0.5px;
+      box-shadow: var(--shadow-cyan-glow);
+    }
+
+    .brand-title-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-title {
+      font-size: 1.35rem;
+      font-weight: 900;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      line-height: 1;
+      letter-spacing: -0.5px;
+    }
+
+    .brand-hq-tag {
+      color: var(--accent-cyan);
+      margin-left: 2px;
+      font-size: 1.35rem;
+      font-weight: 900;
+      text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+    }
+
+    .brand-subtitle {
+      font-size: 0.65rem;
+      color: var(--text-sub);
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-top: 3px;
+    }
+
+    .header-nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* Common Button Classes */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border-radius: var(--radius-md);
+      font-weight: 700;
+      font-size: 0.8rem;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      user-select: none;
+      white-space: nowrap;
+    }
+
+    .btn-cyan {
+      background: linear-gradient(135deg, var(--accent-cyan), #00c6ff);
+      color: #070a10;
+      box-shadow: var(--shadow-cyan-glow);
+    }
+    .btn-cyan:hover {
+      transform: translateY(-1px);
+      filter: brightness(1.08);
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, var(--accent-gold), #eab308);
+      color: #070a10;
+      box-shadow: var(--shadow-gold-glow);
+    }
+    .btn-gold:hover {
+      background: var(--accent-gold-hover);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background-color: var(--bg-surface);
+      color: var(--text-white);
+      border-color: var(--border-subtle);
+    }
+    .btn-outline:hover {
+      background-color: var(--bg-hover);
+      border-color: var(--accent-cyan);
+      color: var(--accent-cyan);
+    }
+
+    .btn-danger {
+      background-color: rgba(239, 68, 68, 0.15);
+      color: #fca5a5;
+      border-color: rgba(239, 68, 68, 0.3);
+    }
+    .btn-danger:hover {
+      background-color: var(--accent-danger);
+      color: white;
+      border-color: var(--accent-danger);
+    }
+
+    .btn-sm {
+      padding: 5px 10px;
+      font-size: 0.72rem;
+      border-radius: var(--radius-sm);
+    }
+
+    /* Host Status Bar (Only displays when unlocked) */
+    #host-active-bar {
+      display: none;
+      background: linear-gradient(90deg, rgba(0, 242, 254, 0.15), rgba(168, 85, 247, 0.15));
+      border-bottom: 1px solid rgba(0, 242, 254, 0.35);
+      padding: 8px 0;
+      font-size: 0.8rem;
+    }
+
+    .host-bar-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .host-indicator-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent-cyan);
+      color: #070a10;
+      font-weight: 900;
+      font-size: 0.72rem;
+      padding: 3px 8px;
+      border-radius: var(--radius-sm);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Hero Search Section */
+    .hero-search-area {
+      padding: 2.75rem 0 1.5rem;
+      text-align: center;
+      background: radial-gradient(circle at 50% 5%, rgba(0, 242, 254, 0.08) 0%, transparent 65%);
+    }
+
+    .hero-tagline-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 14px;
+      border-radius: var(--radius-full);
+      background: rgba(0, 242, 254, 0.08);
+      border: 1px solid rgba(0, 242, 254, 0.25);
+      color: var(--accent-cyan);
+      font-size: 0.72rem;
+      font-weight: 700;
+      margin-bottom: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .hero-heading {
+      font-size: 2.35rem;
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: -0.8px;
+      margin-bottom: 0.5rem;
+      line-height: 1.15;
+    }
+
+    .hero-heading span {
+      background: linear-gradient(135deg, #00f2fe, #4facfe);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subheading {
+      font-size: 0.88rem;
+      color: var(--text-sub);
+      max-width: 640px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .search-container {
+      max-width: 640px;
+      margin: 0 auto 1.25rem;
+      position: relative;
+    }
+
+    .search-icon-symbol {
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--accent-cyan);
+      font-size: 1.15rem;
+      pointer-events: none;
+    }
+
+    .main-search-input {
+      width: 100%;
+      padding: 15px 48px 15px 50px;
+      background-color: var(--bg-surface);
+      border: 2px solid var(--border-subtle);
+      border-radius: var(--radius-full);
+      color: white;
+      font-size: 0.95rem;
+      outline: none;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .main-search-input:focus {
+      border-color: var(--accent-cyan);
+      box-shadow: var(--shadow-cyan-glow);
+    }
+
+    .clear-search-trigger {
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: none;
+      padding: 4px;
+    }
+    .clear-search-trigger:hover {
+      color: white;
+    }
+
+    /* Category Filter Chips */
+    .filter-chips-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 1.5rem;
+    }
+
+    .chip-item {
+      background-color: var(--bg-surface);
+      color: var(--text-sub);
+      border: 1px solid var(--border-subtle);
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .chip-item:hover {
+      border-color: var(--accent-cyan);
+      color: white;
+    }
+    .chip-item.active {
+      background: linear-gradient(135deg, var(--accent-cyan), #00c6ff);
+      color: #070a10;
+      border-color: var(--accent-cyan);
+      box-shadow: var(--shadow-cyan-glow);
+    }
+
+    /* Catalog Section */
+    .catalog-wrapper {
+      padding-bottom: 4.5rem;
+      flex: 1;
+    }
+
+    .catalog-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 12px;
+      margin-bottom: 1.75rem;
+    }
+
+    .catalog-title-indicator {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1.15rem;
+      font-weight: 900;
+      color: white;
+    }
+
+    .catalog-indicator-line {
+      width: 4px;
+      height: 20px;
+      background: var(--accent-cyan);
+      border-radius: 2px;
+      box-shadow: 0 0 10px var(--accent-cyan);
+    }
+
+    .catalog-count-info {
+      font-size: 0.78rem;
+      color: var(--text-sub);
+    }
+
+    /* Anime Poster Grid */
+    .poster-grid-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1.35rem;
+    }
+
+    @media (max-width: 640px) {
+      .poster-grid-layout {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.85rem;
+      }
+    }
+
+    .poster-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+      position: relative;
+    }
+    .poster-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--accent-cyan);
+      box-shadow: var(--shadow-cyan-glow);
+    }
+
+    .poster-thumb-container {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      background-color: #030509;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .poster-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .poster-card:hover .poster-img {
+      transform: scale(1.06);
+    }
+
+    .poster-fade-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(7, 10, 16, 0.95) 0%, rgba(7, 10, 16, 0.2) 40%, transparent 100%);
+      pointer-events: none;
+    }
+
+    .badge-rating {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      background: var(--accent-gold);
+      color: #070a10;
+      font-weight: 900;
+      font-size: 0.68rem;
+      padding: 2px 7px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      z-index: 2;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .badge-category {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: rgba(14, 19, 29, 0.9);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-white);
+      font-weight: 800;
+      font-size: 0.65rem;
+      padding: 2px 6px;
+      border-radius: var(--radius-sm);
+      z-index: 2;
+      text-transform: uppercase;
+    }
+
+    .badge-dub-audio {
+      position: absolute;
+      bottom: 8px;
+      left: 8px;
+      right: 8px;
+      background: rgba(10, 24, 44, 0.9);
+      border: 1px solid rgba(0, 242, 254, 0.5);
+      color: var(--accent-cyan);
+      font-weight: 700;
+      font-size: 0.68rem;
+      padding: 3px 6px;
+      border-radius: var(--radius-sm);
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      z-index: 2;
+    }
+
+    .poster-detail-panel {
+      padding: 11px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .card-title {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.25;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .card-title:hover {
+      color: var(--accent-cyan);
+    }
+
+    .card-metadata {
+      font-size: 0.72rem;
+      color: var(--text-sub);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .card-action-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+      padding-top: 8px;
+      border-top: 1px solid var(--border-subtle);
+      margin-top: 4px;
+    }
+
+    .card-host-controls {
+      display: none;
+      align-items: center;
+      gap: 4px;
+    }
+    body.host-authenticated .card-host-controls {
+      display: flex;
+    }
+
+    /* Modal System */
+    .modal-curtain {
+      position: fixed;
+      inset: 0;
+      background: rgba(3, 5, 9, 0.88);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 250;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      overflow-y: auto;
+    }
+    .modal-curtain.active {
+      display: flex;
+    }
+
+    .modal-window {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      width: 100%;
+      max-width: 760px;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8);
+      overflow: hidden;
+      position: relative;
+    }
+    .modal-window-sm {
+      max-width: 440px;
+    }
+
+    .modal-head {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--bg-card);
+    }
+
+    .modal-head-title {
+      font-size: 1.05rem;
+      font-weight: 900;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .modal-close-trigger {
+      background: transparent;
+      border: none;
+      color: var(--text-sub);
+      font-size: 1.25rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: var(--radius-sm);
+    }
+    .modal-close-trigger:hover {
+      background: var(--bg-hover);
+      color: white;
+    }
+
+    .modal-content-area {
+      padding: 1.25rem;
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    .modal-foot {
+      padding: 0.85rem 1.25rem;
+      border-top: 1px solid var(--border-subtle);
+      background-color: var(--bg-card);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+
+    /* Forms */
+    .form-group-item {
+      margin-bottom: 1.1rem;
+    }
+    .form-group-item label {
+      display: block;
+      font-size: 0.74rem;
+      font-weight: 800;
+      color: var(--text-sub);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+
+    .input-field {
+      width: 100%;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      color: white;
+      padding: 9px 12px;
+      font-size: 0.85rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .input-field:focus {
+      border-color: var(--accent-cyan);
+    }
+
+    .form-grid-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+    }
+
+    /* Anime Details Hero in Modal */
+    .details-top-card {
+      display: flex;
+      gap: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    @media (max-width: 580px) {
+      .details-top-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    .details-img-poster {
+      width: 140px;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+      border-radius: var(--radius-md);
+      border: 2px solid var(--accent-cyan);
+      box-shadow: var(--shadow-cyan-glow);
+      flex-shrink: 0;
+      background-color: #030509;
+    }
+
+    .details-info-box {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .details-main-heading {
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: white;
+      line-height: 1.2;
+    }
+
+    .details-tag-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin: 4px 0;
+    }
+
+    .info-badge {
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-white);
+    }
+    .info-badge.gold {
+      background: var(--accent-gold);
+      color: #070a10;
+      border-color: var(--accent-gold);
+    }
+    .info-badge.cyan {
+      background: rgba(0, 242, 254, 0.15);
+      border-color: rgba(0, 242, 254, 0.4);
+      color: var(--accent-cyan);
+    }
+
+    .synopsis-box {
+      font-size: 0.82rem;
+      color: var(--text-sub);
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 12px;
+      line-height: 1.5;
+      margin-bottom: 1.25rem;
+    }
+
+    .redirection-notice-box {
+      background: rgba(0, 242, 254, 0.08);
+      border: 1px solid rgba(0, 242, 254, 0.3);
+      padding: 10px 14px;
+      border-radius: var(--radius-md);
+      font-size: 0.75rem;
+      color: #bbf7d0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 1.25rem;
+    }
+
+    /* Outbound Episode Row Card */
+    .episodes-listing-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .ep-row-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 10px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      transition: border-color 0.2s;
+    }
+    .ep-row-box:hover {
+      border-color: var(--accent-cyan);
+    }
+
+    .ep-title-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 180px;
+    }
+
+    .ep-badge-num {
+      background: rgba(0, 242, 254, 0.15);
+      color: var(--accent-cyan);
+      font-weight: 900;
+      font-size: 0.72rem;
+      padding: 4px 8px;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(0, 242, 254, 0.3);
+    }
+
+    .ep-text-name {
+      font-size: 0.84rem;
+      font-weight: 800;
+      color: white;
+    }
+
+    .ep-buttons-group {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .outbound-link-btn {
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 5px 10px;
+      border-radius: var(--radius-sm);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      color: white;
+      text-decoration: none;
+      transition: filter 0.2s, transform 0.15s;
+    }
+    .outbound-link-btn:hover {
+      filter: brightness(1.15);
+      transform: translateY(-1px);
+    }
+
+    .outbound-drive { background-color: #10b981; }
+    .outbound-mega { background-color: #ef4444; }
+    .outbound-stream { background-color: #0284c7; }
+
+    /* Host Episode Editor Rows */
+    .host-edit-ep-row {
+      background: var(--bg-main);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 10px;
+      margin-bottom: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    /* Toast Notifications */
+    #toast-banner {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background-color: var(--bg-card);
+      border: 1px solid var(--accent-cyan);
+      color: white;
+      padding: 10px 18px;
+      border-radius: var(--radius-md);
+      font-size: 0.8rem;
+      font-weight: 800;
+      box-shadow: var(--shadow-cyan-glow);
+      z-index: 999;
+      transform: translateY(120px);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+    }
+    #toast-banner.active {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* Footer */
+    .site-footer {
+      background-color: var(--bg-surface);
+      border-top: 1px solid var(--border-subtle);
+      padding: 1.75rem 0;
+      font-size: 0.75rem;
+      color: var(--text-sub);
+    }
+    .footer-inner-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Toast Pop-up Notification -->
+  <div id="toast-banner">Notification</div>
+
+  <!-- Host Active Ribbon (Visible strictly when unlocked) -->
+  <div id="host-active-bar">
+    <div class="container host-bar-flex">
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <span class="host-indicator-pill">👑 Host Access Verified</span>
+        <span style="color: #cbd5e1; font-size: 0.75rem;">Full Authority: Add, Edit, Delete, Poster Art Linkage, &amp; Episode Redirection Links.</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <button onclick="openAddAnimeModal()" class="btn btn-cyan btn-sm">
+          <span>+ Add Anime</span>
+        </button>
+        <button onclick="exportCatalogJson()" class="btn btn-outline btn-sm">
+          <span>Export JSON</span>
+        </button>
+        <button onclick="openImportModal()" class="btn btn-outline btn-sm">
+          <span>Import JSON</span>
+        </button>
+        <button onclick="logoutHostSession()" class="btn btn-danger btn-sm">
+          <span>Exit Host Mode</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Sticky Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-logo" onclick="resetSearchAndFilters()">
+        <div class="brand-badge-box">HQ</div>
+        <div class="brand-title-group">
+          <div class="brand-title">AnimeSearch<span class="brand-hq-tag">HQ</span></div>
+          <div class="brand-subtitle">Direct Hindi Anime &amp; Cartoon Link Index</div>
+        </div>
+      </div>
+
+      <div class="header-nav-actions">
+        <button onclick="openDeploymentGuideModal()" class="btn btn-outline btn-sm" title="Learn how to launch this repository on GitHub Pages">
+          <span>🚀 Deploy Guide</span>
+        </button>
+        <div id="total-count-pill" style="font-size: 0.75rem; color: var(--text-sub); padding: 5px 10px; background: var(--bg-card); border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+          Titles: <strong id="header-total-count" style="color: #fff;">0</strong>
+        </div>
+        <button id="header-host-toggle-btn" onclick="openHostLoginModal()" class="btn btn-outline btn-sm">
+          <span id="header-host-label">🔒 Host Access</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search Hero Section -->
+  <section class="hero-search-area">
+    <div class="container">
+      <div class="hero-tagline-badge">
+        <span>⚡ 100% External Redirection Guide • Zero Video Hosting</span>
+      </div>
+
+      <h1 class="hero-heading">Search Anime &amp; <span>Outbound Links</span></h1>
+      <p class="hero-subheading">
+        Find complete episode directories for Hindi dubbed anime, Dragon Ball Z, Ben 10, Naruto, and classic cartoons with direct Google Drive, Mega, and Stream links.
+      </p>
+
+      <div class="search-container">
+        <span class="search-icon-symbol">🔍</span>
+        <input 
+          type="text" 
+          id="main-search-bar" 
+          class="main-search-input" 
+          placeholder="Search anime title, 'Dragon Ball', 'Ben 10', 'Hindi Dub'..." 
+          oninput="handleSearchQuery(this.value)"
+          autocomplete="off"
+        />
+        <button id="clear-search-btn" class="clear-search-trigger" onclick="clearSearchField()" title="Clear search query">✕</button>
+      </div>
+
+      <!-- Quick Filter Chips -->
+      <div class="filter-chips-list">
+        <button class="chip-item active" data-filter="all" onclick="applyCategoryFilter('all')">All Library</button>
+        <button class="chip-item" data-filter="hindi" onclick="applyCategoryFilter('hindi')">🇮🇳 Hindi Dubbed</button>
+        <button class="chip-item" data-filter="dual" onclick="applyCategoryFilter('dual')">🎧 Dual Audio</button>
+        <button class="chip-item" data-filter="Anime" onclick="applyCategoryFilter('Anime')">⛩️ Anime Series</button>
+        <button class="chip-item" data-filter="Cartoon" onclick="applyCategoryFilter('Cartoon')">📺 Cartoons</button>
+        <button class="chip-item" data-filter="Movie" onclick="applyCategoryFilter('Movie')">🎬 Movies</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catalog Directory Section -->
+  <main class="catalog-wrapper">
+    <div class="container">
+      <div class="catalog-top-bar">
+        <div class="catalog-title-indicator">
+          <div class="catalog-indicator-line"></div>
+          <span id="catalog-header-text">Directory Collection</span>
+        </div>
+        <div class="catalog-count-info" id="catalog-count-text">Showing all titles</div>
+      </div>
+
+      <!-- Poster Grid -->
+      <div id="catalog-grid" class="poster-grid-layout">
+        <!-- Rendered dynamically via JavaScript -->
+      </div>
+
+      <!-- Empty State -->
+      <div id="empty-state-notice" style="display: none; text-align: center; padding: 4rem 1rem; background: var(--bg-surface); border: 1px dashed var(--border-subtle); border-radius: var(--radius-lg);">
+        <div style="font-size: 2.5rem; margin-bottom: 10px;">📽️</div>
+        <h3 style="font-size: 1.15rem; color: #fff; margin-bottom: 6px;">No anime found</h3>
+        <p style="font-size: 0.85rem; color: var(--text-sub); margin-bottom: 1rem;">No results match your search keywords or active category filter.</p>
+        <button class="btn btn-cyan btn-sm" onclick="resetSearchAndFilters()">Reset Search &amp; Filters</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- MODAL 1: Bulletproof Host Login (PIN: ov123456) -->
+  <div id="modal-host-login" class="modal-curtain">
+    <div class="modal-window modal-window-sm">
+      <div class="modal-head">
+        <div class="modal-head-title">
+          <span>🔒 AnimeSearchHQ Host Login</span>
+        </div>
+        <button class="modal-close-trigger" onclick="closeModal('modal-host-login')">✕</button>
+      </div>
+      <div class="modal-content-area">
+        <p style="font-size: 0.8rem; color: var(--text-sub); margin-bottom: 1.1rem;">
+          Enter your Host Master PIN to manage anime posters, modify episode links, and add or delete catalog entries.
+        </p>
+        <form onsubmit="handleHostAuthentication(event)">
+          <div class="form-group-item">
+            <label for="host-pin-field">Master Passcode / PIN</label>
+            <input 
+              type="password" 
+              id="host-pin-field" 
+              class="input-field" 
+              placeholder="Enter PIN..." 
+              autocomplete="current-password"
+              required 
+            />
+            <div id="pin-error-feedback" style="color: #f87171; font-size: 0.75rem; margin-top: 6px; display: none;">
+              ❌ Incorrect PIN. Please check and try again.
+            </div>
+          </div>
+          <div style="display: flex; justify-content: flex-end; gap: 8px; margin-top: 1.25rem;">
+            <button type="button" class="btn btn-outline" onclick="closeModal('modal-host-login')">Cancel</button>
+            <button type="submit" class="btn btn-cyan">Unlock Host Access</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: Anime Details & Outbound Episode Redirection -->
+  <div id="modal-anime-details" class="modal-curtain">
+    <div class="modal-window">
+      <div class="modal-head">
+        <div class="modal-head-title">
+          <span id="detail-header-text">Anime Details</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <button id="host-quick-edit-action" class="btn btn-outline btn-sm" style="display: none;" onclick="triggerHostEditFromCurrentDetails()">
+            ✏️ Edit Anime
+          </button>
+          <button class="modal-close-trigger" onclick="closeModal('modal-anime-details')">✕</button>
+        </div>
+      </div>
+      <div class="modal-content-area">
+        <div class="details-top-card">
+          <img id="modal-detail-poster" src="" alt="Poster" class="details-img-poster" />
+          <div class="details-info-box">
+            <h2 id="modal-detail-title" class="details-main-heading">Anime Title</h2>
+            <div class="details-tag-badges">
+              <span id="modal-detail-rating" class="info-badge gold">⭐ 8.6</span>
+              <span id="modal-detail-type" class="info-badge">Anime</span>
+              <span id="modal-detail-audio" class="info-badge cyan">Hindi Dubbed</span>
+              <span id="modal-detail-year" class="info-badge">2024</span>
+            </div>
+            <div id="modal-detail-genres" style="font-size: 0.75rem; color: var(--text-sub); margin-top: 4px;">
+              Action, Adventure, Shounen
+            </div>
+          </div>
+        </div>
+
+        <div class="synopsis-box" id="modal-detail-synopsis">
+          Synopsis storyline...
+        </div>
+
+        <div class="redirection-notice-box">
+          <span>⚡</span>
+          <div>
+            <strong>Outbound Redirection Notice:</strong> AnimeSearchHQ is strictly an external indexing guide and does not host videos. Clicking buttons below opens verified external servers (Google Drive, Mega, Stream) in a new tab.
+          </div>
+        </div>
+
+        <h4 style="font-size: 0.85rem; font-weight: 800; color: #fff; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">
+          Episode Links / Where To Watch:
+        </h4>
+
+        <div id="modal-detail-episodes" class="episodes-listing-wrap">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+      <div class="modal-foot">
+        <button class="btn btn-outline" onclick="closeModal('modal-anime-details')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 3: Host Add / Edit Anime Form Modal (With Auto Drive Image Converter) -->
+  <div id="modal-anime-editor" class="modal-curtain">
+    <div class="modal-window">
+      <div class="modal-head">
+        <div class="modal-head-title">
+          <span id="editor-modal-heading">✏️ Host Anime Manager</span>
+        </div>
+        <button class="modal-close-trigger" onclick="closeModal('modal-anime-editor')">✕</button>
+      </div>
+      <div class="modal-content-area">
+        <form id="anime-editor-form" onsubmit="saveAnimeFromEditor(event)">
+          <input type="hidden" id="form-anime-id" value="" />
+
+          <div class="form-group-item">
+            <label for="form-title">Anime Title *</label>
+            <input type="text" id="form-title" class="input-field" placeholder="e.g. Dragon Ball Z" required />
+          </div>
+
+          <div class="form-grid-row">
+            <div class="form-group-item">
+              <label for="form-category">Category</label>
+              <select id="form-category" class="input-field">
+                <option value="Anime">Anime</option>
+                <option value="Cartoon">Cartoon</option>
+                <option value="Movie">Movie</option>
+              </select>
+            </div>
+            <div class="form-group-item">
+              <label for="form-audio">Audio / Dub</label>
+              <input type="text" id="form-audio" class="input-field" placeholder="e.g. Hindi Dubbed, Dual Audio" value="Hindi Dubbed" required />
+            </div>
+            <div class="form-group-item">
+              <label for="form-rating">IMDb Rating</label>
+              <input type="text" id="form-rating" class="input-field" placeholder="e.g. 8.7" value="8.5" required />
+            </div>
+            <div class="form-group-item">
+              <label for="form-year">Year</label>
+              <input type="text" id="form-year" class="input-field" placeholder="e.g. 2024" value="2024" required />
+            </div>
+          </div>
+
+          <div class="form-group-item">
+            <label for="form-genres">Genres (comma-separated)</label>
+            <input type="text" id="form-genres" class="input-field" placeholder="Action, Adventure, Shounen" value="Action, Adventure" required />
+          </div>
+
+          <div class="form-group-item">
+            <label for="form-poster">Poster Image URL (Web Link or Google Drive Share Link)</label>
+            <input 
+              type="url" 
+              id="form-poster" 
+              class="input-field" 
+              placeholder="https://... (Supports Google Drive share links with auto-conversion!)" 
+              oninput="handlePosterInputWithAutoDrive(this.value)" 
+              required 
+            />
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 8px;">
+              <span id="drive-convert-status" style="font-size: 0.72rem; color: var(--accent-cyan); display: none;">✨ Google Drive share link auto-converted to direct image!</span>
+              <div style="display: flex; align-items: center; gap: 8px; margin-left: auto;">
+                <span style="font-size: 0.72rem; color: var(--text-sub);">Preview:</span>
+                <img id="form-poster-preview" src="" alt="" style="width: 40px; height: 54px; object-fit: cover; border-radius: 4px; border: 1px solid var(--border-subtle); display: none;" />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group-item">
+            <label for="form-synopsis">Plot Synopsis / Storyline</label>
+            <textarea id="form-synopsis" class="input-field" rows="3" placeholder="Brief storyline overview..."></textarea>
+          </div>
+
+          <!-- Dynamic Episodes Builder -->
+          <div style="margin-top: 1.5rem; border-top: 1px solid var(--border-subtle); padding-top: 1rem;">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+              <div>
+                <span style="font-size: 0.88rem; font-weight: 800; color: #fff;">Episode Redirection Outbound Links</span>
+                <p style="font-size: 0.72rem; color: var(--text-sub);">Paste Google Drive, Mega, or external streaming redirect links.</p>
+              </div>
+              <button type="button" class="btn btn-cyan btn-sm" onclick="addEpisodeRowToEditor()">
+                + Add Episode
+              </button>
+            </div>
+
+            <div id="editor-episodes-container">
+              <!-- Dynamically populated episode input rows -->
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1.5rem; border-top: 1px solid var(--border-subtle); padding-top: 1rem;">
+            <button type="button" id="editor-delete-action" class="btn btn-danger btn-sm" style="display: none;" onclick="deleteAnimeFromActiveEditor()">
+              🗑️ Delete This Anime
+            </button>
+            <div style="display: flex; gap: 8px; margin-left: auto;">
+              <button type="button" class="btn btn-outline" onclick="closeModal('modal-anime-editor')">Cancel</button>
+              <button type="submit" class="btn btn-cyan">Save to AnimeSearchHQ</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 4: GitHub Deployment Guide for AnimeSearchHQ -->
+  <div id="modal-deploy-guide" class="modal-curtain">
+    <div class="modal-window">
+      <div class="modal-head">
+        <div class="modal-head-title">
+          <span>🚀 Deploy AnimeSearchHQ to GitHub Pages</span>
+        </div>
+        <button class="modal-close-trigger" onclick="closeModal('modal-deploy-guide')">✕</button>
+      </div>
+      <div class="modal-content-area" style="font-size: 0.85rem; line-height: 1.6;">
+        <p style="margin-bottom: 1rem;">
+          To make AnimeSearchHQ rank #1 on Google without paying for hosting or domains:
+        </p>
+        <ol style="padding-left: 1.25rem; display: flex; flex-direction: column; gap: 8px; color: var(--text-sub);">
+          <li><strong style="color: #fff;">Repository Name:</strong> Create a new public GitHub repo named <code style="color: var(--accent-cyan); background: var(--bg-card); padding: 2px 6px; border-radius: 4px;">animesearchhq</code></li>
+          <li><strong style="color: #fff;">Upload:</strong> Upload this file named strictly as <code style="color: var(--accent-cyan); background: var(--bg-card); padding: 2px 6px; border-radius: 4px;">index.html</code></li>
+          <li><strong style="color: #fff;">Turn on Pages:</strong> Go to Repository <strong>Settings &rarr; Pages</strong> &rarr; select Branch <strong>main</strong> &rarr; Click <strong>Save</strong>.</li>
+          <li><strong style="color: #fff;">Live Link:</strong> Your site is published at <code style="color: var(--accent-cyan);">https://yourname.github.io/animesearchhq/</code></li>
+          <li><strong style="color: #fff;">Google Search Console:</strong> Submit that exact URL to Google Search Console to request indexing for the keyword <strong>AnimeSearchHQ</strong>.</li>
+        </ol>
+      </div>
+      <div class="modal-foot">
+        <button class="btn btn-cyan" onclick="closeModal('modal-deploy-guide')">Got It</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 5: Import Catalog JSON -->
+  <div id="modal-import-catalog" class="modal-curtain">
+    <div class="modal-window modal-window-sm">
+      <div class="modal-head">
+        <div class="modal-head-title">
+          <span>📥 Import Catalog JSON</span>
+        </div>
+        <button class="modal-close-trigger" onclick="closeModal('modal-import-catalog')">✕</button>
+      </div>
+      <div class="modal-content-area">
+        <p style="font-size: 0.78rem; color: var(--text-sub); margin-bottom: 1rem;">
+          Paste your exported catalog JSON below to restore or synchronize your anime directory.
+        </p>
+        <textarea id="import-json-textarea" class="input-field" rows="6" placeholder='[ { "id": "...", "title": "..." } ]'></textarea>
+      </div>
+      <div class="modal-foot">
+        <button class="btn btn-outline" onclick="closeModal('modal-import-catalog')">Cancel</button>
+        <button class="btn btn-cyan" onclick="processCatalogImport()">Import Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner-flex">
+      <div>
+        <strong style="color: #fff;">AnimeSearchHQ</strong> &bull; Direct Hindi Anime &amp; Cartoon Link Directory
+      </div>
+      <div>
+        Disclaimer: AnimeSearchHQ does not host any media files. All buttons link directly to third-party hosts.
+      </div>
+      <div>
+        <a href="#" onclick="openHostLoginModal(); return false;" style="color: var(--accent-cyan); text-decoration: underline;">
+          Host Control
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ==========================================================================
+       1. BULLETPROOF HOST AUTHENTICATION (PIN: ov123456 or ov 123456)
+       ========================================================================== */
+    let isHostAuthenticated = false;
+
+    // Check optional local storage with safe fallback
+    try {
+      if (localStorage.getItem('animesearchhq_host_session') === 'active') {
+        isHostAuthenticated = true;
+      }
+    } catch (e) {}
+
+    function openHostLoginModal() {
+      if (isHostAuthenticated) {
+        showToastNotification("👑 Host Mode is already active!");
+        return;
+      }
+      document.getElementById('host-pin-field').value = '';
+      document.getElementById('pin-error-feedback').style.display = 'none';
+      openModal('modal-host-login');
+      setTimeout(() => {
+        document.getElementById('host-pin-field').focus();
+      }, 100);
+    }
+
+    function handleHostAuthentication(e) {
+      e.preventDefault();
+      const rawInput = document.getElementById('host-pin-field').value || '';
+      
+      // Normalize: lowercase, trim whitespace, and also check compact version
+      const trimmed = rawInput.trim().toLowerCase();
+      const compact = trimmed.replace(/\s+/g, '');
+
+      // Verify fail-proof match for "ov123456" or "ov 123456"
+      if (trimmed === 'ov123456' || compact === 'ov123456') {
+        isHostAuthenticated = true;
+        try {
+          localStorage.setItem('animesearchhq_host_session', 'active');
+        } catch (err) {}
+
+        closeModal('modal-host-login');
+        refreshHostStateUI();
+        showToastNotification("👑 Welcome Host! AnimeSearchHQ management unlocked.");
+      } else {
+        const errorFeedback = document.getElementById('pin-error-feedback');
+        errorFeedback.style.display = 'block';
+        errorFeedback.innerText = "❌ Incorrect PIN. Please try again.";
+      }
+    }
+
+    function logoutHostSession() {
+      isHostAuthenticated = false;
+      try {
+        localStorage.removeItem('animesearchhq_host_session');
+      } catch (e) {}
+      refreshHostStateUI();
+      showToastNotification("Logged out of Host session. Viewer mode active.");
+    }
+
+    function refreshHostStateUI() {
+      const hostBar = document.getElementById('host-active-bar');
+      const headerLabel = document.getElementById('header-host-label');
+      const headerBtn = document.getElementById('header-host-toggle-btn');
+
+      if (isHostAuthenticated) {
+        document.body.classList.add('host-authenticated');
+        hostBar.style.display = 'block';
+        headerLabel.innerText = "👑 Host Active";
+        headerBtn.onclick = () => openAddAnimeModal();
+      } else {
+        document.body.classList.remove('host-authenticated');
+        hostBar.style.display = 'none';
+        headerLabel.innerText = "🔒 Host Access";
+        headerBtn.onclick = () => openHostLoginModal();
+      }
+
+      renderDirectoryCatalog();
+    }
+
+    /* ==========================================================================
+       2. GOOGLE DRIVE IMAGE AUTO-CONVERTER HELPER
+       ========================================================================== */
+    function convertGoogleDriveLinkToDirectImage(rawUrl) {
+      if (!rawUrl || typeof rawUrl !== 'string') return rawUrl;
+      const url = rawUrl.trim();
+
+      // Check if it's a Google Drive link
+      if (url.includes('drive.google.com')) {
+        let fileId = null;
+
+        // Format 1: drive.google.com/file/d/FILE_ID/...
+        const matchFile = url.match(/\/file\/d\/([a-zA-Z0-9_-]+)/);
+        if (matchFile && matchFile[1]) {
+          fileId = matchFile[1];
+        }
+
+        // Format 2: drive.google.com/open?id=FILE_ID or id=FILE_ID
+        if (!fileId) {
+          const matchId = url.match(/[?&]id=([a-zA-Z0-9_-]+)/);
+          if (matchId && matchId[1]) {
+            fileId = matchId[1];
+          }
+        }
+
+        if (fileId) {
+          // Direct high-speed CDN endpoint for Google Drive image thumbnails
+          return `https://lh3.googleusercontent.com/d/${fileId}`;
+        }
+      }
+      return url;
+    }
+
+    function handlePosterInputWithAutoDrive(value) {
+      const converted = convertGoogleDriveLinkToDirectImage(value);
+      const statusMsg = document.getElementById('drive-convert-status');
+
+      if (converted !== value) {
+        document.getElementById('form-poster').value = converted;
+        statusMsg.style.display = 'block';
+        setTimeout(() => { statusMsg.style.display = 'none'; }, 4000);
+      } else {
+        statusMsg.style.display = 'none';
+      }
+
+      updatePosterPreview(converted);
+    }
+
+    function updatePosterPreview(url) {
+      const preview = document.getElementById('form-poster-preview');
+      if (url && url.startsWith('http')) {
+        preview.src = url;
+        preview.style.display = 'block';
+      } else {
+        preview.style.display = 'none';
+      }
+    }
+
+    /* ==========================================================================
+       3. DEFAULT ANIME DATABASE (RareToons / Hindi Dub Classics)
+       ========================================================================== */
+    const DEFAULT_ANIMESEARCHHQ_DATABASE = [
+      {
+        id: "ben-10-classic",
+        title: "Ben 10 (Classic)",
+        type: "Cartoon",
+        audio: "Hindi Dubbed",
+        rating: "8.6",
+        year: "2005",
+        genres: "Action, Sci-Fi, Adventure, Superheroes",
+        synopsis: "The story of Ben Tennyson, a 10-year-old boy who discovers a mysterious alien watch called the Omnitrix during a summer vacation with his Grandpa Max and cousin Gwen.",
+        poster: "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=600&auto=format&fit=crop&q=80",
+        episodes: [
+          {
+            number: "1",
+            title: "And Then There Were 10",
+            driveUrl: "https://drive.google.com",
+            megaUrl: "https://mega.nz",
+            streamUrl: "https://www.cartoonnetwork.com"
+          },
+          {
+            number: "2",
+            title: "Washington B.C.",
+            driveUrl: "https://drive.google.com",
+            megaUrl: "https://mega.nz",
+            streamUrl: "https://www.cartoonnetwork.com"
+          },
+          {
+            number: "3",
+            title: "The Krakken",
+            driveUrl: "https://drive.google.com",
+            megaUrl: "https://mega.nz",
+            streamUrl: "https://www.cartoonnetwork.com"
+          }
+        ]
+      },
+      {
+        id: "dragon-ball-z",
+        title: "Dragon Ball Z",
+        type: "Anime",
+        audio: "Hindi Dubbed",
+        rating: "8.8",
+        year: "1989",
+        genres: "Action, Martial Arts, Fantasy, Shounen",
+        synopsis: "Goku defends the Earth alongside the Z-Fighters against Saiyans, warlords, and cosmic tyrants like Frieza and Cell.",
+        poster: "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=600&auto=format&fit=crop&q=80",
+        episodes: [
+          {
+            number: "1",
+            title: "The New Threat",
+            driveUrl: "https://drive.google.com",
+            megaUrl: "https://mega.nz",
+            streamUrl: "https://www.crunchyroll.com"
+          },
+          {
+            number: "2",
+            title: "Gohan's Secret",
+            driveUrl: "https://drive.google.com",
+            megaUrl: "https://mega.nz",
+            streamUrl: "https://www.crunchyroll.com"
+          }
+        ]
+      },
+      {
+        id: "naruto-shippuden",
+        title: "Naruto Shippuden",
+        type: "Anime",
+        audio: "Dual Audio",
+        rating: "8.7",
+        year: "2007",
+        genres: "Action, Adventure, Ninja, Shounen",
+        synopsis: "Naruto returns to the Hidden Leaf Village after years of training with Jiraiya, determined to rescue Sasuke and stop the Akatsuki.",
+        poster: "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=600&auto=format&fit=crop&q=80",
+        episodes: [
+          {
+            number: "1",
+            title: "Homecoming",
+            driveUrl: "https://drive.google.com",
+            megaUrl: "https://mega.nz",
+            streamUrl: "https://www.crunchyroll.com"
+          }
+        ]
+      },
+      {
+        id: "jujutsu-kaisen",
+        title: "Jujutsu Kaisen",
+        type: "Anime",
+        audio: "Hindi Dubbed",
+        rating: "8.5",
+        year: "2020",
+        genres: "Action, Supernatural, Shounen",
+        synopsis: "Yuji Itadori swallows a cursed finger of Ryomen Sukuna and enters the dangerous world of Tokyo Jujutsu High Sorcerers.",
+        poster: "https://images.unsplash.com/photo-1563089145-599997674d42?w=600&auto=format&fit=crop&q=80",
+        episodes: [
+          {
+            number: "1",
+            title: "Ryomen Sukuna",
+            driveUrl: "https://drive.google.com",
+            megaUrl: "https://mega.nz",
+            streamUrl: "https://www.crunchyroll.com"
+          }
+        ]
+      },
+      {
+        id: "shinchan-classic",
+        title: "Shinchan",
+        type: "Cartoon",
+        audio: "Hindi Dubbed",
+        rating: "8.2",
+        year: "1992",
+        genres: "Comedy, Slice of Life, Family",
+        synopsis: "The funny antics of Shinnosuke 'Shin' Nohara, his parents Hiroshi and Misae, little sister Himawari, and dog Shiro in Kasukabe.",
+        poster: "https://images.unsplash.com/photo-1618042164219-62c820f10723?w=600&auto=format&fit=crop&q=80",
+        episodes: [
+          {
+            number: "1",
+            title: "Mom Gets Furious / Running Errands",
+            driveUrl: "https://drive.google.com",
+            megaUrl: "https://mega.nz",
+            streamUrl: "https://www.youtube.com"
+          }
+        ]
+      }
+    ];
+
+    let animeCatalog = [];
+
+    function initializeCatalog() {
+      try {
+        const stored = localStorage.getItem('animesearchhq_catalog_data');
+        if (stored) {
+          animeCatalog = JSON.parse(stored);
+        } else {
+          animeCatalog = [...DEFAULT_ANIMESEARCHHQ_DATABASE];
+          saveCatalogToStorage();
+        }
+      } catch (e) {
+        animeCatalog = [...DEFAULT_ANIMESEARCHHQ_DATABASE];
+      }
+    }
+
+    function saveCatalogToStorage() {
+      try {
+        localStorage.setItem('animesearchhq_catalog_data', JSON.stringify(animeCatalog));
+      } catch (e) {}
+      document.getElementById('header-total-count').innerText = animeCatalog.length;
+    }
+
+    /* ==========================================================================
+       4. SEARCH & FILTER CONTROLS
+       ========================================================================== */
+    let currentSearchKeyword = "";
+    let activeCategory = "all";
+
+    function handleSearchQuery(query) {
+      currentSearchKeyword = (query || "").trim().toLowerCase();
+      document.getElementById('clear-search-btn').style.display = currentSearchKeyword ? 'block' : 'none';
+      renderDirectoryCatalog();
+    }
+
+    function clearSearchField() {
+      const input = document.getElementById('main-search-bar');
+      input.value = "";
+      currentSearchKeyword = "";
+      document.getElementById('clear-search-btn').style.display = 'none';
+      renderDirectoryCatalog();
+    }
+
+    function applyCategoryFilter(cat) {
+      activeCategory = cat;
+      document.querySelectorAll('.chip-item').forEach(btn => {
+        if (btn.getAttribute('data-filter') === cat) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+      renderDirectoryCatalog();
+    }
+
+    function resetSearchAndFilters() {
+      clearSearchField();
+      applyCategoryFilter('all');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    /* ==========================================================================
+       5. CATALOG RENDERING
+       ========================================================================== */
+    function renderDirectoryCatalog() {
+      let filtered = [...animeCatalog];
+
+      // Category filter
+      if (activeCategory === 'hindi') {
+        filtered = filtered.filter(a => (a.audio || '').toLowerCase().includes('hindi'));
+      } else if (activeCategory === 'dual') {
+        filtered = filtered.filter(a => (a.audio || '').toLowerCase().includes('dual'));
+      } else if (activeCategory !== 'all') {
+        filtered = filtered.filter(a => (a.type || '').toLowerCase() === activeCategory.toLowerCase());
+      }
+
+      // Keyword search
+      if (currentSearchKeyword) {
+        filtered = filtered.filter(a => {
+          return (
+            (a.title || '').toLowerCase().includes(currentSearchKeyword) ||
+            (a.genres || '').toLowerCase().includes(currentSearchKeyword) ||
+            (a.audio || '').toLowerCase().includes(currentSearchKeyword) ||
+            (a.type || '').toLowerCase().includes(currentSearchKeyword)
+          );
+        });
+      }
+
+      const grid = document.getElementById('catalog-grid');
+      const emptyState = document.getElementById('empty-state-notice');
+      const countDisplay = document.getElementById('catalog-count-text');
+      const headerText = document.getElementById('catalog-header-text');
+
+      countDisplay.innerText = `Showing ${filtered.length} of ${animeCatalog.length} titles`;
+      headerText.innerText = currentSearchKeyword 
+        ? `Search: "${currentSearchKeyword}"` 
+        : (activeCategory === 'all' ? 'Directory Collection' : `${activeCategory.toUpperCase()} Collection`);
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '';
+        emptyState.style.display = 'block';
+        return;
+      }
+
+      emptyState.style.display = 'none';
+      grid.innerHTML = filtered.map(anime => {
+        const fallbackImg = `https://placehold.co/400x600/0e131d/00f2fe?text=${encodeURIComponent(anime.title)}`;
+        const epCount = (anime.episodes || []).length;
+        const posterUrl = convertGoogleDriveLinkToDirectImage(anime.poster) || fallbackImg;
+
+        return `
+          <div class="poster-card">
+            <div class="poster-thumb-container" onclick="openDetailsModal('${anime.id}')">
+              <span class="badge-rating">⭐ ${anime.rating || '8.0'}</span>
+              <span class="badge-category">${anime.type || 'Anime'}</span>
+              <img 
+                src="${posterUrl}" 
+                alt="${anime.title}" 
+                class="poster-img"
+                loading="lazy"
+                onerror="this.src='${fallbackImg}'"
+              />
+              <div class="poster-fade-overlay"></div>
+              <span class="badge-dub-audio">${anime.audio || 'Hindi Dubbed'}</span>
+            </div>
+
+            <div class="poster-detail-panel">
+              <div>
+                <h3 class="card-title" onclick="openDetailsModal('${anime.id}')" title="${anime.title}">
+                  ${anime.title}
+                </h3>
+                <div class="card-metadata">
+                  <span>${anime.year || '2024'}</span>
+                  <span>${epCount} ${epCount === 1 ? 'Episode' : 'Episodes'}</span>
+                </div>
+              </div>
+
+              <div class="card-action-bar">
+                <button class="btn btn-cyan btn-sm" onclick="openDetailsModal('${anime.id}')">
+                  Open Links ↗
+                </button>
+
+                <!-- Host Controls on Card -->
+                <div class="card-host-controls">
+                  <button class="btn btn-outline btn-sm" title="Edit Anime" onclick="openEditAnimeModal('${anime.id}')">
+                    ✏️
+                  </button>
+                  <button class="btn btn-danger btn-sm" title="Delete Anime" onclick="deleteAnimeById('${anime.id}')">
+                    🗑️
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    /* ==========================================================================
+       6. DETAILS & OUTBOUND EPISODES MODAL
+       ========================================================================== */
+    let currentlyViewedAnime = null;
+
+    function openDetailsModal(id) {
+      const anime = animeCatalog.find(a => a.id === id);
+      if (!anime) return;
+
+      currentlyViewedAnime = anime;
+
+      document.getElementById('detail-header-text').innerText = anime.title;
+      document.getElementById('modal-detail-title').innerText = anime.title;
+      document.getElementById('modal-detail-rating').innerText = `⭐ ${anime.rating || '8.0'}`;
+      document.getElementById('modal-detail-type').innerText = anime.type || 'Anime';
+      document.getElementById('modal-detail-audio').innerText = anime.audio || 'Hindi Dubbed';
+      document.getElementById('modal-detail-year').innerText = anime.year || '2024';
+      document.getElementById('modal-detail-genres').innerText = anime.genres || 'Action, Animation';
+      document.getElementById('modal-detail-synopsis').innerText = anime.synopsis || 'No plot storyline summary provided for this title yet.';
+
+      const fallback = `https://placehold.co/400x600/0e131d/00f2fe?text=${encodeURIComponent(anime.title)}`;
+      const posterImg = document.getElementById('modal-detail-poster');
+      const directPoster = convertGoogleDriveLinkToDirectImage(anime.poster) || fallback;
+      posterImg.src = directPoster;
+      posterImg.onerror = () => { posterImg.src = fallback; };
+
+      // Quick edit button for authenticated host
+      const hostEditBtn = document.getElementById('host-quick-edit-action');
+      hostEditBtn.style.display = isHostAuthenticated ? 'inline-flex' : 'none';
+
+      // Render episodes
+      const epContainer = document.getElementById('modal-detail-episodes');
+      const episodes = anime.episodes || [];
+
+      if (episodes.length === 0) {
+        epContainer.innerHTML = `
+          <div style="text-align: center; padding: 1.5rem; color: var(--text-sub); background: var(--bg-card); border-radius: var(--radius-md);">
+            No episode links added yet.
+          </div>
+        `;
+      } else {
+        epContainer.innerHTML = episodes.map(ep => `
+          <div class="ep-row-box">
+            <div class="ep-title-left">
+              <span class="ep-badge-num">EP ${ep.number || '1'}</span>
+              <span class="ep-text-name">${ep.title || 'Episode'}</span>
+            </div>
+            <div class="ep-buttons-group">
+              ${ep.driveUrl ? `<a href="${ep.driveUrl}" target="_blank" rel="noopener noreferrer" class="outbound-link-btn outbound-drive"><span>Google Drive</span> ↗</a>` : ''}
+              ${ep.megaUrl ? `<a href="${ep.megaUrl}" target="_blank" rel="noopener noreferrer" class="outbound-link-btn outbound-mega"><span>Mega Cloud</span> ↗</a>` : ''}
+              ${ep.streamUrl ? `<a href="${ep.streamUrl}" target="_blank" rel="noopener noreferrer" class="outbound-link-btn outbound-stream"><span>Stream Server</span> ↗</a>` : ''}
+            </div>
+          </div>
+        `).join('');
+      }
+
+      openModal('modal-anime-details');
+    }
+
+    function triggerHostEditFromCurrentDetails() {
+      if (!currentlyViewedAnime) return;
+      closeModal('modal-anime-details');
+      openEditAnimeModal(currentlyViewedAnime.id);
+    }
+
+    /* ==========================================================================
+       7. HOST ANIME BUILDER & EPISODE MANAGER
+       ========================================================================== */
+    let tempEpisodeRows = [];
+
+    function openAddAnimeModal() {
+      if (!isHostAuthenticated) {
+        openHostLoginModal();
+        return;
+      }
+
+      document.getElementById('editor-modal-heading').innerText = "✨ Add New Anime to AnimeSearchHQ";
+      document.getElementById('form-anime-id').value = "";
+      document.getElementById('form-title').value = "";
+      document.getElementById('form-category').value = "Anime";
+      document.getElementById('form-audio').value = "Hindi Dubbed";
+      document.getElementById('form-rating').value = "8.5";
+      document.getElementById('form-year').value = "2024";
+      document.getElementById('form-genres').value = "Action, Adventure, Shounen";
+      document.getElementById('form-poster').value = "";
+      document.getElementById('form-synopsis').value = "";
+      document.getElementById('form-poster-preview').style.display = 'none';
+      document.getElementById('editor-delete-action').style.display = 'none';
+
+      tempEpisodeRows = [
+        { number: "1", title: "Episode 1", driveUrl: "https://drive.google.com", megaUrl: "https://mega.nz", streamUrl: "https://www.crunchyroll.com" }
+      ];
+
+      renderEditorEpisodeRows();
+      openModal('modal-anime-editor');
+    }
+
+    function openEditAnimeModal(id) {
+      if (!isHostAuthenticated) {
+        openHostLoginModal();
+        return;
+      }
+
+      const anime = animeCatalog.find(a => a.id === id);
+      if (!anime) return;
+
+      document.getElementById('editor-modal-heading').innerText = `✏️ Editing: ${anime.title}`;
+      document.getElementById('form-anime-id').value = anime.id;
+      document.getElementById('form-title').value = anime.title || "";
+      document.getElementById('form-category').value = anime.type || "Anime";
+      document.getElementById('form-audio').value = anime.audio || "Hindi Dubbed";
+      document.getElementById('form-rating').value = anime.rating || "8.5";
+      document.getElementById('form-year').value = anime.year || "2024";
+      document.getElementById('form-genres').value = anime.genres || "";
+      document.getElementById('form-poster').value = anime.poster || "";
+      document.getElementById('form-synopsis').value = anime.synopsis || "";
+
+      updatePosterPreview(convertGoogleDriveLinkToDirectImage(anime.poster));
+
+      document.getElementById('editor-delete-action').style.display = 'inline-flex';
+
+      tempEpisodeRows = (anime.episodes || []).map(ep => ({ ...ep }));
+      if (tempEpisodeRows.length === 0) {
+        tempEpisodeRows.push({ number: "1", title: "Episode 1", driveUrl: "", megaUrl: "", streamUrl: "" });
+      }
+
+      renderEditorEpisodeRows();
+      openModal('modal-anime-editor');
+    }
+
+    function addEpisodeRowToEditor() {
+      const nextNum = tempEpisodeRows.length + 1;
+      tempEpisodeRows.push({
+        number: String(nextNum),
+        title: `Episode ${nextNum}`,
+        driveUrl: "",
+        megaUrl: "",
+        streamUrl: ""
+      });
+      renderEditorEpisodeRows();
+    }
+
+    function removeEpisodeRowFromEditor(index) {
+      tempEpisodeRows.splice(index, 1);
+      renderEditorEpisodeRows();
+    }
+
+    function renderEditorEpisodeRows() {
+      const container = document.getElementById('editor-episodes-container');
+      if (tempEpisodeRows.length === 0) {
+        container.innerHTML = `<div style="font-size: 0.75rem; color: var(--text-sub); padding: 8px;">No episodes. Click '+ Add Episode' to create one.</div>`;
+        return;
+      }
+
+      container.innerHTML = tempEpisodeRows.map((ep, idx) => `
+        <div class="host-edit-ep-row">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px;">
+            <div style="display: flex; gap: 6px; flex: 1;">
+              <input 
+                type="text" 
+                class="input-field" 
+                style="width: 70px;" 
+                placeholder="Ep #" 
+                value="${ep.number || ''}" 
+                oninput="tempEpisodeRows[${idx}].number = this.value"
+              />
+              <input 
+                type="text" 
+                class="input-field" 
+                style="flex: 1;" 
+                placeholder="Episode Title" 
+                value="${ep.title || ''}" 
+                oninput="tempEpisodeRows[${idx}].title = this.value"
+              />
+            </div>
+            <button type="button" class="btn btn-danger btn-sm" onclick="removeEpisodeRowFromEditor(${idx})">✕</button>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 6px; margin-top: 4px;">
+            <input 
+              type="url" 
+              class="input-field" 
+              placeholder="Google Drive (https://...)" 
+              value="${ep.driveUrl || ''}" 
+              oninput="tempEpisodeRows[${idx}].driveUrl = this.value"
+            />
+            <input 
+              type="url" 
+              class="input-field" 
+              placeholder="Mega Cloud (https://...)" 
+              value="${ep.megaUrl || ''}" 
+              oninput="tempEpisodeRows[${idx}].megaUrl = this.value"
+            />
+            <input 
+              type="url" 
+              class="input-field" 
+              placeholder="Stream Server (https://...)" 
+              value="${ep.streamUrl || ''}" 
+              oninput="tempEpisodeRows[${idx}].streamUrl = this.value"
+            />
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function saveAnimeFromEditor(e) {
+      e.preventDefault();
+      if (!isHostAuthenticated) return;
+
+      const title = document.getElementById('form-title').value.trim();
+      if (!title) {
+        showToastNotification("Please enter an anime title!");
+        return;
+      }
+
+      const id = document.getElementById('form-anime-id').value;
+      const type = document.getElementById('form-category').value;
+      const audio = document.getElementById('form-audio').value.trim() || 'Hindi Dubbed';
+      const rating = document.getElementById('form-rating').value.trim() || '8.5';
+      const year = document.getElementById('form-year').value.trim() || '2024';
+      const genres = document.getElementById('form-genres').value.trim() || 'Action';
+      const rawPoster = document.getElementById('form-poster').value.trim();
+      const poster = convertGoogleDriveLinkToDirectImage(rawPoster);
+      const synopsis = document.getElementById('form-synopsis').value.trim();
+
+      const episodes = tempEpisodeRows.filter(ep => ep.number || ep.title || ep.driveUrl || ep.megaUrl || ep.streamUrl);
+
+      if (id) {
+        // Update existing
+        const idx = animeCatalog.findIndex(a => a.id === id);
+        if (idx !== -1) {
+          animeCatalog[idx] = {
+            id,
+            title,
+            type,
+            audio,
+            rating,
+            year,
+            genres,
+            poster,
+            synopsis,
+            episodes
+          };
+          showToastNotification(`Updated "${title}" successfully!`);
+        }
+      } else {
+        // Add new
+        const newId = title.toLowerCase().replace(/[^a-z0-9]+/g, '-') + '-' + Date.now().toString().slice(-4);
+        animeCatalog.unshift({
+          id: newId,
+          title,
+          type,
+          audio,
+          rating,
+          year,
+          genres,
+          poster,
+          synopsis,
+          episodes
+        });
+        showToastNotification(`Added "${title}" to AnimeSearchHQ!`);
+      }
+
+      saveCatalogToStorage();
+      closeModal('modal-anime-editor');
+      renderDirectoryCatalog();
+    }
+
+    function deleteAnimeFromActiveEditor() {
+      const id = document.getElementById('form-anime-id').value;
+      if (!id) return;
+      deleteAnimeById(id);
+      closeModal('modal-anime-editor');
+    }
+
+    function deleteAnimeById(id) {
+      if (!isHostAuthenticated) return;
+      const target = animeCatalog.find(a => a.id === id);
+      const name = target ? target.title : "Anime";
+
+      animeCatalog = animeCatalog.filter(a => a.id !== id);
+      saveCatalogToStorage();
+      renderDirectoryCatalog();
+      showToastNotification(`Deleted "${name}"`);
+    }
+
+    /* ==========================================================================
+       8. JSON BACKUP & IMPORT / EXPORT
+       ========================================================================== */
+    function exportCatalogJson() {
+      const dataStr = JSON.stringify(animeCatalog, null, 2);
+      const blob = new Blob([dataStr], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `AnimeSearchHQ_Catalog_${new Date().toISOString().slice(0, 10)}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToastNotification("Catalog JSON downloaded!");
+    }
+
+    function openImportModal() {
+      document.getElementById('import-json-textarea').value = '';
+      openModal('modal-import-catalog');
+    }
+
+    function processCatalogImport() {
+      const text = document.getElementById('import-json-textarea').value.trim();
+      if (!text) {
+        showToastNotification("Please paste valid JSON data!");
+        return;
+      }
+
+      try {
+        const parsed = JSON.parse(text);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          animeCatalog = parsed;
+          saveCatalogToStorage();
+          closeModal('modal-import-catalog');
+          renderDirectoryCatalog();
+          showToastNotification(`Imported ${parsed.length} titles successfully!`);
+        } else {
+          showToastNotification("Invalid format: expected a JSON array of anime.");
+        }
+      } catch (err) {
+        showToastNotification("Error parsing JSON: Please check syntax.");
+      }
+    }
+
+    function openDeploymentGuideModal() {
+      openModal('modal-deploy-guide');
+    }
+
+    /* ==========================================================================
+       9. MODAL HELPERS & NOTIFICATIONS
+       ========================================================================== */
+    function openModal(id) {
+      const modal = document.getElementById(id);
+      if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeModal(id) {
+      const modal = document.getElementById(id);
+      if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      }
+    }
+
+    // Close on outside click
+    document.querySelectorAll('.modal-curtain').forEach(curtain => {
+      curtain.addEventListener('click', (e) => {
+        if (e.target === curtain) {
+          closeModal(curtain.id);
+        }
+      });
+    });
+
+    // Close on Escape key
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.modal-curtain.active').forEach(m => closeModal(m.id));
+      }
+    });
+
+    let toastTimer;
+    function showToastNotification(message) {
+      const toast = document.getElementById('toast-banner');
+      toast.innerText = message;
+      toast.classList.add('active');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        toast.classList.remove('active');
+      }, 3200);
+    }
+
+    /* ==========================================================================
+       10. INITIALIZATION ON WINDOW LOAD
+       ========================================================================== */
+    window.addEventListener('DOMContentLoaded', () => {
+      initializeCatalog();
+      refreshHostStateUI();
+      renderDirectoryCatalog();
+    });
+  </script>
+</body>
+</html>
