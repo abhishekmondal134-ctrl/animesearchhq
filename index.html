@@ -2122,7 +2122,34 @@
       initializeCatalog();
       refreshHostStateUI();
       renderDirectoryCatalog();
+      
     });
   </script>
+  <!-- Firebase SDK & Live Realtime Sync -->
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+<script>
+  const firebaseConfig = {
+    databaseURL: "https://animesearchhq-default-rtdb.firebaseio.com"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.database();
+
+  // Sync cloud database with the website in real time
+  db.ref("animeList").on("value", (snapshot) => {
+    const data = snapshot.val();
+    if (data) {
+      localStorage.setItem("animeSearchHQ_db", JSON.stringify(data));
+      if (typeof renderAnimeGrid === "function") renderAnimeGrid();
+      const syncBadge = document.getElementById("sync-status");
+      if (syncBadge) syncBadge.innerText = "☁️ Cloud Live Sync Active";
+    }
+  });
+
+  // Automatically push updates to Firebase when host saves
+  window.saveToCloud = function(animeData) {
+    db.ref("animeList").set(animeData);
+  };
+</script>
 </body>
 </html>
