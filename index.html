@@ -2137,12 +2137,21 @@
   const db = firebase.database();
 
   // Pull data from Firebase whenever it updates
- db.ref("animelist").on("value", (snapshot) => {
-        const data = snapshot.val();
-        if (data) {
-            localStorage.setItem("animesearchhq_catalog_data", JSON.stringify(data));
-            if (typeof renderAnimeGrid === "function") renderAnimeGrid();
-            if (typeof loadCatalog === "function") loadCatalog();
+db.ref().on("value", (snapshot) => {
+        const rawData = snapshot.val();
+        if (rawData) {
+            let data = rawData.animelist ? rawData.animelist : rawData;
+            let list = Array.isArray(data) ? data : Object.values(data);
+            list = list.filter(item => item && item.title);
+
+            localStorage.setItem("animesearchhq_catalog_data", JSON.stringify(list));
+
+            if (typeof catalog !== "undefined") { catalog = list; }
+            if (typeof animeCatalog !== "undefined") { animeCatalog = list; }
+
+            if (typeof renderDirectoryCatalog === "function") {
+                renderDirectoryCatalog();
+            }
         }
     });
   });
