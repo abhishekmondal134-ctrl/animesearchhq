@@ -2137,13 +2137,14 @@
   const db = firebase.database();
 
   // Pull data from Firebase whenever it updates
-  db.ref("animeList").on("value", (snapshot) => {
-    const data = snapshot.val();
-    if (data) {
-      localStorage.setItem("animesearchhq_catalog_data", JSON.stringify(data));
-      if (typeof renderAnimeGrid === "function") renderAnimeGrid();
-      if (typeof loadCatalog === "function") loadCatalog();
-    }
+ db.ref("animelist").on("value", (snapshot) => {
+        const data = snapshot.val();
+        if (data) {
+            localStorage.setItem("animesearchhq_catalog_data", JSON.stringify(data));
+            if (typeof renderAnimeGrid === "function") renderAnimeGrid();
+            if (typeof loadCatalog === "function") loadCatalog();
+        }
+    });
   });
 
   // Auto-detect changes you make in Host Mode and push them to Firebase
