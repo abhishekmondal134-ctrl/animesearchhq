@@ -2136,24 +2136,23 @@
   firebase.initializeApp(firebaseConfig);
   const db = firebase.database();
 
-  // Pull data from Firebase whenever it updates
-db.ref().on("value", (snapshot) => {
-        const rawData = snapshot.val();
-        if (rawData) {
-            let data = rawData.animelist ? rawData.animelist : rawData;
-            let list = Array.isArray(data) ? data : Object.values(data);
-            list = list.filter(item => item && item.title);
+  // Listen to Firebase and load into site
+  db.ref().on("value", (snapshot) => {
+    const rawData = snapshot.val();
+    if (rawData) {
+      let data = rawData.animelist ? rawData.animelist : rawData;
+      let list = Array.isArray(data) ? data : Object.values(data);
+      list = list.filter(item => item && typeof item === "object" && item.title);
 
-            localStorage.setItem("animesearchhq_catalog_data", JSON.stringify(list));
+      const oldData = localStorage.getItem("animesearchhq_catalog_data");
+      const newData = JSON.stringify(list);
 
-            if (typeof catalog !== "undefined") { catalog = list; }
-            if (typeof animeCatalog !== "undefined") { animeCatalog = list; }
-
-            if (typeof renderDirectoryCatalog === "function") {
-                renderDirectoryCatalog();
-            }
-        }
-    });
+      // Reload once automatically for visitors whose storage is empty or outdated
+      if (oldData !== newData) {
+        localStorage.setItem("animesearchhq_catalog_data", newData);
+        location.reload();
+      }
+    }
   });
 
   // Auto-detect changes you make in Host Mode and push them to Firebase
@@ -2162,7 +2161,11 @@ db.ref().on("value", (snapshot) => {
     const currentCatalogState = localStorage.getItem("animesearchhq_catalog_data");
     if (currentCatalogState && currentCatalogState !== lastCatalogState) {
       lastCatalogState = currentCatalogState;
-      db.ref("animeList").set(JSON.parse(currentCatalogState));
+      try {
+        db.ref().set(JSON.parse(currentCatalogState));
+      } catch (e) {
+        console.error(e);
+      }
     }
   }, 2000);
 </script>
